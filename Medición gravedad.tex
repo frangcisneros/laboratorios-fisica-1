@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FORMATO DEL DOCUMENTO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,twocolumn]{article}
+\usepackage[final]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{lineno}
+\usepackage{amssymb}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\decimalpoint{}
+\usepackage[right=2cm,left=3cm,top=2cm,bottom=2cm,headsep=0cm,footskip=0.5cm]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FORMATO DEL DOCUMENTO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ENCABEZADO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Determinación valor de la gravedad}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%TITULO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Bichir Cisneros, Francisco\\
+\texttt{franbichir@gmail.com}
+\and
+Medrano, Lautaro\\
+\texttt{lautaromedrano10@hotmail.com}\\
+\and
+Villarroel Facundo\\
+\texttt{facu99.fv@gmail.com}
+\\
+\\
+UTN FRSR\textendash{}Urquiza 316\textendash{}Comisión N$^\circ$~1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ENCABEZADO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Se analiza un sistema simple conformado por un péndulo de Borda\cite{b1} del cuál se mide su periodo\cite{b2} y determina en una localización particular ($34.60 S,\;68.32W$ y $700m$ sobre el nivel del mar) la magnitud de la aceleración de la gravedad terrestre.
+\end{abstract}
+
+\section{Introducción}
+
+La gravedad es quizás el fenómeno natural más sorprendente y poderoso del universo\cite{b3}, agente por el cual  los objetos con masa son atraídos entre sí, efecto mayormente observable en la interacción entre los planetas, galaxias y demás objetos del universo, es un agente omnipresente que hasta el día de hoy sigue siendo estudiado por distintas ramas de la ciencia.\cite{b4}.\\
+
+Isaac Newton\cite{b5}, conocido también como “el padre de la física” fue el precursor del estudio de este fenómeno, donde en una de sus obras describe la ley de la gravitación universal\cite{b6}, la misma describe la interacción gravitatoria entre distintos cuerpos con masa. Fue formulada por él en su libro Philosophiae Naturalis Principia Mathematica\cite{b6}, publicado el 5 de julio de 1687, donde establece por primera vez una relación proporcional (deducida empíricamente de la observación) de la fuerza con que se atraen dos objetos con masa.
+Se realizarán experimentaciones con un péndulo para que de esta forma se deduzca la magnitud de la aceleración gravitatoria así como lo hizo Newton en el siglo 17. Es de suma importancia que el valor al que se desea llegar es exclusivo para el Planeta Tierra.\cite{b7}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%INTRODUCCION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%MARCO TEORICO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Marco Teórico}
+
+Conociendo la ecuación que corresponde al periodo de un cuerpo oscilante\cite{b2}
+
+\begin{large}
+    \begin{equation} \label{e3}
+        T=\frac{t_{R}}{n_{osc}}
+    \end{equation}
+\end{large}
+
+En donde $T$ será el periodo, $t_{R}$ el tiempo total medido y $n_{osc}$ el número total de oscilaciones.%
+\\
+
+A través de lo deducido por Isaac Newton~\cite{b6} se hará uso de las siguientes ecuaciones:
+
+\begin{large}
+    \begin{equation*}
+        T=2 \pi \sqrt{\frac{L}{g}}
+    \end{equation*}
+\end{large}
+
+Donde $L$ el largo de la cuerda a utilizar en el péndulo de Borda para sostener el péndulo y $g$ la gravedad terreste.
+
+El periodo será un valor conocido, nuestra incógnita será $g$, por lo cuál:%
+
+\begin{large}
+    \begin{equation} \label{e1}
+        g=\frac{4 \pi ^{2} \cdot L}{T^{2}}
+    \end{equation}
+\end{large}
+
+Para determinar el error en $g$ se hará uso de la propagación de errores:\cite{b8}
+
+\begin{large}
+    \begin{equation} \label{e2}
+        E_{R}(g)=\frac{\vartriangle L}{L}+2\frac{\vartriangle T}{T}
+    \end{equation}
+\end{large}
+
+Donde $\vartriangle T$ será el error en $T$ y $\vartriangle L$ será el error de medición de la cuerda. De estos errores el error más importante reside en $\vartriangle T$.%
+\\
+
+También se buscará comparar con un valor de $g$ obtenido a través de la ley de la gravitación universal\cite{b5}.
+
+\begin{large}
+    \begin{equation} \label{e4}
+        g=G\frac{m_{T}}{\left\{ r_{T} \right\} ^{2}}
+    \end{equation}
+\end{large}
+
+Donde $m_{T}$ será la masa de la tierra\cite{b10}, $r_{T}$\cite{b10} el radio de la tierra con respecto al nivel del mar (donde se le sumará la altura con respecto al nivel del mar del lugar específico donde se medirá $g$) y $G$ la constante de gravitación universal\cite{b1}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%MARCO TEORICO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DISEÑO EXPERIMENTAL%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Diseño experimental}
+
+Como se indica en la Figura se utiliza un péndulo de Borda\cite{b1} se lo hará ascender a una altura mayor de $L$, posicionando a $M$ en $A$, este mismo creará un ángulo $\theta$ con respecto a la normal ($N$), siendo $A$ el reposo, se lo soltará del mismo lo cuál ocasionará que $M$ oscile y se posicione en $B$ y regresará a una posición cercana a $A$ (esto debido a la perdida de energía que posee $M$), en ese instante se tomará el tiempo.
+
+Esto se repetirá cierta cantidad de veces, hasta que el péndulo se detenga. La representación del número de oscilaciones en función del tiempo se puede observar en la Figura en la cuál se gráfica la cantidad de oscilaciones en función del tiempo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DISEÑO EXPERIMENTAL%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%RESULTADOS Y DISCUSION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Resultados y discusión}
+
+A continuación se observa el resultado obtenido de $g$ al haber hecho uso de la ecuación (\ref{e1}).
+
+\begin{center}
+    \begin{large}
+        $g=(9.51 \pm 0.02)\,\frac{m}{s^{2}}$
+    \end{large}
+\end{center}
+
+Al hacer uso de la ecuación (\ref{e4}) el valor obtenido de $g$ será
+
+\begin{center}
+    \begin{large}
+        $g=(9.81755 \pm 0.00001)\,\frac{m}{s^{2}}$
+    \end{large}
+\end{center}
+
+Donde comparado con el valor ``estándar'' de $g$ ($9.81986~\mathrm{m/s}^{2}$)\cite{b4} la variación es sumamente pequeña, por ende la diferencia entre el valor medido y el teórico se puede deber a:
+
+\begin{itemize}
+    \item La forma geométrica de la tierra no es una esfera\cite{b11}
+    \item Densidad no uniforme~\cite{b11}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%RESULTADOS Y DISCUSION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CONCLUSIONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusiones}
+
+El valor ``estándar'' de $g$ es de $9.80\,\mathrm{m/s}^{2}$ y este fue originalmente adoptado por el Comité Internacional de Pesos y Medidas en 1901\cite{b9} para 45$^\circ$ de latitud, a pesar de que se ha demostrado que este valor es demasiado alto en aproximadamente cinco partes en diez mil\cite{b9}, además este valor varía con respecto a la altura, además de poseer un error en su propia medición.
+
+En consecuencia se puede deducir y suponer que, siendo cercano el valor de $g$ a su estándar y no dando exactamente ese mismo número, es correcto y así mismo demostrar que $g$ es un valor estándar y promedio de la gravedad, sin embargo varía dependiendo del lugar donde nos encontremos, este caso $34.60\,S,\;68.32\,W$ y a $750\,\mathrm{m}$ sobre el nivel del mar.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CONCLUSIONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%REFERENCIAS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{99}
+
+    \bibitem{b1} Hockey Thomas, \emph{The Biographical Encyclopedia of Astronomers,\\ Springer Publishing, (2009)}
+
+    \bibitem{b2} Ekeland Ivar, \emph{Convexity methods in Hamiltonian mechanics, Results in Mathematics and Related Areas, (1990)}
+
+    \bibitem{b3} Comins Neil F., Kaufmann, William J., \emph{Discovering the Universe: From the Stars to the Planets, (2008)}
+
+    \bibitem{b4} NASA, \emph{HubbleSite: Black Holes: Gravity's Relentless Pull, hubblesite.org., (2016)}
+
+    \bibitem{b5} Keynes Milo, \emph{Balancing Newton's Mind: His Singular Behaviour and His Madness of 1692--93,\\ Notes and Records of the Royal Society of London, (2008)}
+
+    \bibitem{b6} Newton, Isaac, \emph{The Principia: Mathematical Principles of Natural Philosophy, University of California Press, (1999)}
+
+    \bibitem{b7} Nemiroff R., Bonnell J., \emph{The Potsdam Gravity Potato, Astronomy Picture of the Day, NASA, (2014)}
+
+    \bibitem{b8} Félix Cernuschi, Francisco I. Greco, \emph{Teoría de errores de mediciones, Editorial Universitaria, (1968)}
+
+    \bibitem{b9} List R.J., Francisco I. Greco, \emph{Acceleration of Gravity, Smithsonian Meteorological Tables,\\ Sixth Ed. Smithsonian Institution, Washington DC, (1968)}
+
+    \bibitem{b10} William F. Riley, Leroy D. Sturges, \emph{Ingeniería mecánica: Estática, (1996)}
+
+    \bibitem{b11} Standish E. Myles, Williams James C., \emph{Orbital Ephemerides of the Sun, Moon and Planets, (2010)}
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%REFERENCIAS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%GRAFICOS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%GRAFICOS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
