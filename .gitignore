@@ -5,3 +5,7 @@
 *.out
 *.pdf
 *.synctex.gz
+*.snm
+*.nav
+*.toc
+*.vrb
